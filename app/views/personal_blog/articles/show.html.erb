@@ -10,5 +10,8 @@
   <%= @article.body %>
 </p>
 
+<h3>Comments</h3>
+<%= render @article.comments %>
+
 <%= link_to 'Edit', edit_article_path(@article) %> |
 <%= link_to 'Back', articles_path %>
