@@ -1,8 +1,8 @@
 module PersonalBlog
   class Article < ActiveRecord::Base
     has_many :comments, dependent: :destroy
-    has_many  :taggings
-    has_many :tags, through :taggings 
+    has_many :taggings
+    has_many :tags, through: :taggings 
 
     def all_tags=(names)
       self.tags = names.split(",").map do |name|
