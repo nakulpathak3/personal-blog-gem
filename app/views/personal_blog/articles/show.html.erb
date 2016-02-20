@@ -10,6 +10,9 @@
   <%= @article.body %>
 </p>
 
+<h3>Tags</h3>
+<%= @article.all_tags %>
+
 <h3>Comments</h3>
 <%= render @article.comments %>
 <%= render "personal_blog/comments/form" %>

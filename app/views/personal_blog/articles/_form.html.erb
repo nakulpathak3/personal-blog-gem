@@ -15,10 +15,17 @@
     <%= f.label :title %><br>
     <%= f.text_field :title %>
   </div>
+
   <div class="field">
     <%= f.label :body %><br>
     <%= f.text_area :body %>
   </div>
+
+  <div class="field">
+    <%= f.label :all_tags %><br>
+    <%= f.text_field :all_tags, placeholder: "Tags separated with commas" %>
+  </div>
+  
   <div class="actions">
     <%= f.submit %>
   </div>
