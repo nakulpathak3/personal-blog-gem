@@ -3,10 +3,10 @@ require_dependency "personal_blog/application_controller"
 module PersonalBlog
   class CommentsController < ApplicationController
     def create
-      @article = Article.find(params[:article_id])
-      @comment = @article.comments.create(comment_params)
+      @post = Post.find(params[:post_id])
+      @comment = @post.comments.create(comment_params)
       flash[:notice] = "Comment has been created!"
-      redirect_to articles_path
+      redirect_to posts_path
     end
 
     private

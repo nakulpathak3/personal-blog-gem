@@ -1,4 +1,4 @@
 module PersonalBlog
-  module ArticlesHelper
+  module PostsHelper
   end
 end

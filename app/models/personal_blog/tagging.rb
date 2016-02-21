@@ -1,6 +1,6 @@
 module PersonalBlog
   class Tagging < ActiveRecord::Base
-    belongs_to :article
+    belongs_to :post
     belongs_to :tag
   end
 end

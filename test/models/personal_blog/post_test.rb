@@ -1,7 +1,7 @@
 require 'test_helper'
 
 module PersonalBlog
-  class ArticleTest < ActiveSupport::TestCase
+  class PostTest < ActiveSupport::TestCase
     # test "the truth" do
     #   assert true
     # end
