@@ -28,14 +28,11 @@ ActiveRecord::Schema.define(version: 20160220172622) do
   end
 
   create_table "personal_blog_taggings", force: :cascade do |t|
-    t.integer  "tag_id"
-    t.integer  "post_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer "post_id", null: false
+    t.integer "tag_id",  null: false
   end
 
-  add_index "personal_blog_taggings", ["post_id"], name: "index_personal_blog_taggings_on_post_id"
-  add_index "personal_blog_taggings", ["tag_id"], name: "index_personal_blog_taggings_on_tag_id"
+  add_index "personal_blog_taggings", ["tag_id", "post_id"], name: "index_personal_blog_taggings_on_tag_id_and_post_id", unique: true
 
   create_table "personal_blog_tags", force: :cascade do |t|
     t.string   "name"
