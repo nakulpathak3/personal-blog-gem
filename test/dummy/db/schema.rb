@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160220181450) do
+ActiveRecord::Schema.define(version: 20160220172622) do
 
   create_table "personal_blog_comments", force: :cascade do |t|
     t.integer  "post_id"
@@ -28,8 +28,8 @@ ActiveRecord::Schema.define(version: 20160220181450) do
   end
 
   create_table "personal_blog_taggings", force: :cascade do |t|
-    t.integer  "post_id"
     t.integer  "tag_id"
+    t.integer  "post_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
