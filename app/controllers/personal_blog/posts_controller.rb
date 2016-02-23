@@ -3,6 +3,7 @@ require_dependency "personal_blog/application_controller"
 module PersonalBlog
   class PostsController < ApplicationController
     before_action :set_post, only: [:show, :edit, :update, :destroy]
+    before_filter :authorize, except: [:index, :show]
 
     # GET /posts
     def index
