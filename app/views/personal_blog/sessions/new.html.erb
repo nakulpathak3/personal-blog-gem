@@ -1,0 +1,18 @@
+<h1>Log in</h1>
+
+<%= form_for(:session) do |f| %>
+
+  <%= f.password_field :password %>
+  <%= binding.pry %>
+  <%= f.submit "Log in" %>
+<% end %>
+
+<!--
+<div class="content">
+  <p>
+  <%= form_tag sessions_path do %>
+ Password: <%= text_field_tag :password %>
+  <% end %>
+  </p>
+</div>
+-->
