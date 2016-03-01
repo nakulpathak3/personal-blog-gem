@@ -1,5 +1,4 @@
 require_dependency "personal_blog/application_controller"
-require "pry"
 
 module PersonalBlog
   class SessionsController < ApplicationController
@@ -8,10 +7,14 @@ module PersonalBlog
     end
 
     def create
-      binding.pry
-      session[:password] = params[:password]
-      flash[:notice] = 'Successfully Logged In'
-      redirect_to posts_path
+      session[:password] = params[:session][:password]
+      if admin?
+        flash[:notice] = "Successfully Logged In"
+        redirect_to posts_path
+      else
+        flash[:notice] = "Incorrect password, please try again."
+        redirect_to login_path
+      end
     end
 
     def destroy

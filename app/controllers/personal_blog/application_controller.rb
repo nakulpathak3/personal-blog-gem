@@ -5,7 +5,7 @@ module PersonalBlog
     protected
 
     def admin?
-      session[:password] == "yolo" 
+      session[:password] == "yolo"
     end
 
     def authorize

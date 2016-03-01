@@ -1,9 +1,10 @@
+<p id="notice"><%= notice %></p>
+
 <h1>Log in</h1>
 
 <%= form_for(:session) do |f| %>
-
+  <%= f.label :password %>
   <%= f.password_field :password %>
-  <%= binding.pry %>
   <%= f.submit "Log in" %>
 <% end %>
 
