@@ -1,4 +1,5 @@
-/*
-  Place all the styles related to the matching controller here.
-  They will automatically be included in application.css.
-*/
+h1 {
+  font-family: Georgia;
+  font-size: 48px;
+}
+
