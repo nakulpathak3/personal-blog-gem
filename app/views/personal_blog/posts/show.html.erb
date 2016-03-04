@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>  <%= @post.title %>  </h1>
-<h6>  <%= @post.published_at %>  </h6>
+<p>  <%= @post.published_at.strftime('%B %e, %Y') %>  </p>
 
 <p>
   <%= markdown(@post.body) %>
