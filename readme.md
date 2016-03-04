@@ -8,7 +8,7 @@ Add a personal blog with markdown support to any rails app. I'd avoid using it t
 - [x] Add security to allow only one user to edit, create blog  posts.
 - [x] Add minimal responsive layout
 - [x] Add published on datetime column to posts 
-- [ ] Sanitize comments input boxes
+- [x] Sanitize comments input boxes
 - [ ] Improve on design
-- [ ] Update gemspec with proper description
+- [x] Update gemspec with proper description
 - [ ] Upload to rubygems.org
