@@ -1,36 +1,13 @@
 # Personal Blog Gem
 
-Add a personal blog with markdown support to any rails app. I'd avoid using it till I remove this line. ETA: 1 week.
+This is a simple Ruby on Rails engine that mounts a personal blog on any Rails application. It supports markdown. It is also completely customizable, i.e, you can add CSS and JS to style the blog any way you    want. Admin access is provided through a sessions controller that uses an environment variable to check the password.
 
-### Todo
+## Usage
 
-- [x] Move redcarpet and coderay to support markdown.
-- [x] Add security to allow only one user to edit, create blog  posts.
-- [x] Add minimal responsive layout
-- [x] Add published on datetime column to posts 
-- [x] Sanitize comments input boxes
-- [ ] Improve on design. How?
-- [x] Update gemspec with proper description
-- [ ] Upload to rubygems.org
+1. Install this gem, 
+  - Add `gem 'personal_blog'` to your `Gemfile` and run `bundle`. 
+  - You can also do `gem install personal_blog`.
 
-#### Show page
- - [ ] Check fonts. Could be better combination.
- - [ ] Change published at format
- - [ ] Increase body font size
- - [ ] Add beige-ish background
- - [ ] Make small box-like divs for each comment
- - [ ] Put a line break between each comment
- - [ ] Remove numbering for comments.
- - [ ] Center the text and add decent margins on left and right
- - [ ] Hr tags starting and end of body
- - [ ] Make tags links to all posts with that tag,
- - [ ] Put little button like things for the tags as well.
-
-#### Index page
- - [ ] Remove table-like format
- - [ ] Add list view kinda thing with titles as links, published on right under the title and a preview of the body.
-
-#### Edit page
- - [ ] Center margins like show page.
- - [ ] Make the body input thing bigger and nicer looking
- - [ ] Maybe make tag inputs different? 
+2. In your `config/routes.rb`, add `mount PersonalBlog::Engine, at "/blog"` - assuming you'd like it to be available like website.com/blog or localhost:3000/blog in development.
+3. Run `bin/rails personal_blog:install:migrations`. This will copy all the migrations from the engine into your app.
+4. Run `rake db:migrate`. If you don't have a database already, you'd need to run `rake db:create`.
