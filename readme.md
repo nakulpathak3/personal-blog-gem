@@ -8,13 +8,13 @@ This is a simple Ruby on Rails engine that mounts a personal blog on any Rails a
   - Add `gem 'personal_blog'` to your `Gemfile` and run `bundle`. 
   - You can also do `gem install personal_blog`.
 
-2. In your `config/routes.rb`, add `mount PersonalBlog::Engine, at "/blog"` - assuming you'd like it to be available like website.com/blog or localhost:3000/blog in development.
-3. Run `bin/rails personal_blog:install:migrations`. This will copy all the migrations from the engine into your app.
-4. Run `rake db:migrate`. If you don't have a database already, you'd need to run `rake db:create`.
-5. You also need to set an alex variable called 'blog_password'. This is needed for letting only you have admin access to create, edit and delete blog posts.
+2. In your `config/routes.rb`, add `mount PersonalBlog::Engine => "/blog"` - assuming you'd like it to be available like website.com/blog or localhost:3000/blog in development.
+3. Run `bin/rake personal_blog:install:migrations`. This will copy all the migrations from the engine into your app.
+4. Run `bin/rake db:migrate`.
+5. You also need to set an environment variable called 'blog_password'. This is needed for letting only you have admin access to create, edit and delete blog posts.
   - For local testing, you can do `export blog_password=<your_password>` in your `~/.bash_profile` for bash and `~/.zshrc` for zsh. Don't forget to do `source ~/.bash_profile` or `source ~/.zshrc` after this.
   - For heroku, you can do `heroku config:set blog_password=<your_password>`. This [guide](https://devcenter.heroku.com/articles/config-vars) explains how environment variables work in heroku.
-  - For nginx, add `env blog_password=<your_password>;` to your nginx.conf file. Often located at `/etc/nginx/nginx.conf`.
+  - For nginx, add `env blog_password=<your_password>;` to your nginx.conf file. This goes outside of the `http` and `server` blocks. If you're not sure where your file is, do `sudo find / -name "nginx.conf"`.
   - For apache, have a look at the [SetEnv](https://httpd.apache.org/docs/2.4/mod/mod_env.html) directive.
   
 ## Customizing Design
