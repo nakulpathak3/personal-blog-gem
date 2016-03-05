@@ -8,6 +8,8 @@
 - [ ] Improve on design. How?
 - [x] Update gemspec with proper description
 - [ ] Upload to rubygems.org
+- [ ] Get it to work with Rails 5 and update gemspec when you do.
+
 
 #### Show page
  - [ ] Check fonts. Could be better combination.
