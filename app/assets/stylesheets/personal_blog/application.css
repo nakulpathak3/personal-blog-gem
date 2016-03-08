@@ -2,3 +2,9 @@
  *= require_tree .
  *= require_self
 */
+
+div.container {
+  color: #333;
+  margin: 0 auto;
+  width: 60%;
+}
