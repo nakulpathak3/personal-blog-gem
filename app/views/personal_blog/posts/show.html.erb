@@ -7,10 +7,12 @@
   <%= markdown(@post.body) %>
 </p>
 
-<%= @post.all_tags %>
-
 <br>
 <hr class="body-end">
+
+<% @post.tags.each do |tag| %>
+  <span class="tag"><%= tag.name %></span>
+<% end %>
 
 <h4> Comments </h4>
 <%= render @post.comments %>
