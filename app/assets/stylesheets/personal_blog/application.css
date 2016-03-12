@@ -3,6 +3,8 @@
  *= require_self
 */
 
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+
 body {
   color: #333;
   background-color: #f9f9f9;
@@ -14,4 +16,7 @@ div.container {
   width: 60%;
 }
 
-
+code {
+  font-family: 'Inconsolata';
+  font-size: inherit;
+}
