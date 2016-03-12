@@ -7,8 +7,15 @@
 
 body {
   color: #333;
-  background-color: #f9f9f9;
-  font-size: 18px;
+  font: 100%/1.618em Georgia, "Times New Roman", Times, serif;
+  /*background-color: #f9f9f9;
+  font-size: 18px;*/
+  line-height: 1.4em;
+}
+
+h1 {
+  color: #000;
+  font: normal 2.28em/120% Georgia, Times, serif;
 }
 
 div.container {
@@ -17,6 +24,17 @@ div.container {
 }
 
 code {
+  color: #4c4c4c;
   font-family: 'Inconsolata';
+  background-color: rgba(0, 0, 0, 0.04);
   font-size: inherit;
+}
+
+a {
+  text-decoration: none !important;
+  color: #4078c0;
+}
+
+ul>ul>li {
+  margin-bottom: 5px;
 }

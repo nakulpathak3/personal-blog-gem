@@ -7,6 +7,10 @@ body {
   font-size: 18px;
 }
 
-a {
-  color: #555;
+.post-title a{
+  color: #000;
+}
+
+.post-title a:hover{
+  color: #777;
 }

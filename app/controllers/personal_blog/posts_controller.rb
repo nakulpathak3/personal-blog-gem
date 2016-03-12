@@ -28,7 +28,7 @@ module PersonalBlog
       @post = Post.new(post_params)
 
       if @post.save
-        redirect_to @post, notice: 'post was successfully created.'
+        redirect_to @post, notice: 'Post was successfully created.'
       else
         render :new
       end
@@ -37,7 +37,7 @@ module PersonalBlog
     # PATCH/PUT /posts/1
     def update
       if @post.update(post_params)
-        redirect_to @post, notice: 'post was successfully updated.'
+        redirect_to @post, notice: 'Post was successfully updated.'
       else
         render :edit
       end
@@ -46,7 +46,7 @@ module PersonalBlog
     # DELETE /posts/1
     def destroy
       @post.destroy
-      redirect_to posts_url, notice: 'post was successfully destroyed.'
+      redirect_to posts_url, notice: 'Post was successfully destroyed.'
     end
 
     private

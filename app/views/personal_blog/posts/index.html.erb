@@ -2,7 +2,7 @@
 
 <% @posts.each do |post| %>
   <div>
-    <h3><%= link_to "#{post.title}", post %></h3>
+    <h3 class="post-title"><%= link_to "#{post.title}", post %></h3>
     <p><%= post.body.split[0..80].join(' ') %></p>
   </div>
 <% end %>
