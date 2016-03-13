@@ -11,7 +11,7 @@
 <hr class="body-end">
 
 <% @post.tags.each do |tag| %>
-  <span class="tag"><%= tag.name %></span>
+  <span class="tag"><%= link_to tag.name, tag_path(tag.name) %></span>
 <% end %>
 
 <h4> Comments </h4>
