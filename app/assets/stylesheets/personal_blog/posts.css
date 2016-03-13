@@ -20,3 +20,11 @@ body {
   border-radius: 10%;
   border: 0.5px solid #333;
 }
+
+.tag a {
+  color: #333;
+}
+
+.tag:hover {
+  background-color: #eee;
+}
