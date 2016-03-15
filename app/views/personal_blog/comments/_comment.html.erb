@@ -1,5 +1,5 @@
 <div class="comment-box">
   <b><%= comment.author %></b>
   <span class="comment-date"><%= comment.created_at.strftime('%B %e, %Y')%></span> <br>
-  <%= comment.text %>
+  <%= markdown_without_p(comment.text) %>
 </div>

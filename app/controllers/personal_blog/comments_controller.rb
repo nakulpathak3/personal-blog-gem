@@ -1,4 +1,5 @@
 require_dependency "personal_blog/application_controller"
+require_dependency "personal_blog/comments_helper"
 
 module PersonalBlog
   class CommentsController < ApplicationController
