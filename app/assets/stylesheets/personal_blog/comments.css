@@ -3,3 +3,8 @@ div.comment-box {
   padding: 5px;
   border-bottom: 1px solid #777;
 }
+
+.comment-date {
+  float: right;
+}
+

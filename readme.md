@@ -4,7 +4,6 @@ This is a simple Ruby on Rails engine that mounts a personal blog on any Rails a
 
 ## Todo till publishing 
 
-- Add datetime on comments
 - Fix rouge versus inline code styles clash
 - Should comments render markdown?
 - Automatically write anonymous if comment without name
