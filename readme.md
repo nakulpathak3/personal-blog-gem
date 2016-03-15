@@ -6,7 +6,6 @@ This is a simple Ruby on Rails engine that mounts a personal blog on any Rails a
 
 - Add datetime on comments
 - Fix rouge versus inline code styles clash
-- Decide what to do with post preview not rendering markdown
 - Should comments render markdown?
 - Automatically write anonymous if comment without name
 - Disallow empty post/comment creation/editing
