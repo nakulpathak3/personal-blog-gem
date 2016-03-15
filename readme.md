@@ -2,6 +2,19 @@
 
 This is a simple Ruby on Rails engine that mounts a personal blog on any Rails application. It supports markdown. It is also completely customizable, i.e, you can add CSS and JS to style the blog any way you    want. Admin access is provided through a sessions controller that uses an environment variable to check the password.
 
+## Todo till publishing 
+
+- Add datetime on comments
+- Fix rouge versus inline code styles clash
+- Decide what to do with post preview not rendering markdown
+- Should comments render markdown?
+- Automatically write anonymous if comment without name
+- Disallow empty post/comment creation/editing
+- Make width 80% for mobile
+- Make tags input box bigger
+- Add delete post option, they need it.
+
+These are the only things I will do until I publish. I will publish the moment this list is done
 ## Usage
 
 1. Install this gem, 
