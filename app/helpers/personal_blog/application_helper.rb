@@ -7,6 +7,11 @@ module PersonalBlog
     
     class HTML < Redcarpet::Render::HTML
       include Rouge::Plugins::Redcarpet
+
+      def rouge_formatter(opts={})
+        opts = { inline_theme: nil }
+        Rouge::Formatters::HTML.new(opts)
+      end
     end
 
     def markdown(text)
