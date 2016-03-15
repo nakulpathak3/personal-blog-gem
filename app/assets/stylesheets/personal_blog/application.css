@@ -24,12 +24,11 @@ div.container {
 }
 
 code {
-  color: #4c4c4c;
+ /* color: #4c4c4c; */
   font-family: 'Inconsolata';
-  background-color: rgba(0, 0, 0, 0.04);
+/*  background-color: rgba(0, 0, 0, 0.04); */
   font-size: inherit;
 }
-
 a {
   text-decoration: none !important;
   color: #4078c0;

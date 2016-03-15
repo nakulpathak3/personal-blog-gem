@@ -10,7 +10,7 @@ module PersonalBlog
     end
 
     def markdown(text)
-      options = {
+      render_options = {
         filter_html: true,
         hard_wrap: true, 
         link_attributes: { rel: 'nofollow', target: "_blank" },
@@ -21,10 +21,14 @@ module PersonalBlog
       extensions = {
         autolink:           true,
         superscript:        true,
+        no_intra_emphasis:  true,
+        lax_spacing:        true,
+        strikethrough:      true,
+        fenced_code_blocks: true,
         disable_indented_code_blocks: true
       }
 
-      renderer = HTML.new(options)
+      renderer = HTML.new(render_options)
       markdown = Redcarpet::Markdown.new(renderer, extensions)
 
       markdown.render(text).html_safe
