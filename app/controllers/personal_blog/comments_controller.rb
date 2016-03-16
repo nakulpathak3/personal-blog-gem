@@ -9,7 +9,7 @@ module PersonalBlog
         flash[:notice] = "Comment has been created!"
         redirect_to post_path(@post)
       else
-        flash[:error] = "Fuuck"
+        flash[:error] = "Comment must have some content."
         redirect_to post_path(@post)
       end
     end
