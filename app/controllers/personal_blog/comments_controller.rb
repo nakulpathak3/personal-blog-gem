@@ -4,7 +4,8 @@ module PersonalBlog
   class CommentsController < ApplicationController
     def create
       @post = Post.find(params[:post_id])
-      if @comment = @post.comments.create(comment_params)
+      @comment = @post.comments.create(comment_params)
+      if @comment.valid?
         flash[:notice] = "Comment has been created!"
         redirect_to post_path(@post)
       else
