@@ -9,7 +9,6 @@ This is a simple Ruby on Rails engine that mounts a personal blog on any Rails a
 - Automatically write anonymous if comment without name
 - Disallow empty post/comment creation/editing
 - Make width 80% for mobile
-- Make tags input box bigger
 - Add delete post option, they need it.
 
 These are the only things I will do until I publish. I will publish the moment this list is done
