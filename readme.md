@@ -8,7 +8,6 @@ This is a simple Ruby on Rails engine that mounts a personal blog on any Rails a
 - Should comments render markdown? Annoying and leads to other problems, so no for now. 
 - Automatically write anonymous if comment without name
 - Disallow empty post/comment creation/editing
-- Make width 80% for mobile
 
 These are the only things I will do until I publish. I will publish the moment this list is done
 ## Usage
