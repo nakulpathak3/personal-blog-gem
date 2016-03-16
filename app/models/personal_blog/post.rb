@@ -5,6 +5,8 @@ module PersonalBlog
     has_many :tags, through: :taggings 
 
     before_create :set_published_at
+    validates :title, presence: true
+    validates :body, presence: true
 
     def all_tags=(names)
       self.tags = names.split(",").map do |name|

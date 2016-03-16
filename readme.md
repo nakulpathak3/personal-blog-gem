@@ -5,8 +5,6 @@ This is a simple Ruby on Rails engine that mounts a personal blog on any Rails a
 ## Todo till publishing 
 
 - Fix rouge versus inline code styles clash
-- Automatically write anonymous if comment without name
-- Disallow empty post/comment creation/editing
 
 These are the only things I will do until I publish. I will publish the moment this list is done
 ## Usage
