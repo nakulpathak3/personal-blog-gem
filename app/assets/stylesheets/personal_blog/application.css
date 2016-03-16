@@ -23,10 +23,17 @@ div.container {
   width: 60%;
 }
 
-p code {
+code {
  color: #4c4c4c;
   font-family: 'Inconsolata';
   background-color: rgba(0, 0, 0, 0.04);
+  font-size: inherit;
+}
+
+pre code {
+  color: inherit;
+  font-family: 'Inconsolata';
+  background-color: inherit;
   font-size: inherit;
 }
 
