@@ -1,12 +1,7 @@
 # Personal Blog Gem
 
-This is a simple Ruby on Rails engine that mounts a personal blog on any Rails application. It supports markdown. It is also completely customizable, i.e, you can add CSS and JS to style the blog any way you    want. Admin access is provided through a sessions controller that uses an environment variable to check the password.
+This is a simple Ruby on Rails engine that mounts a personal blog on any Rails application. It supports markdown and is responsive. It is also completely customizable, i.e, you can add CSS and JS to style the blog any way you want. Admin access is provided through a sessions controller that uses an environment variable to check the password.
 
-## Todo till publishing 
-
-- Fix foreign key error when deleting post
-
-These are the only things I will do until I publish. I will publish the moment this list is done
 ## Usage
 
 1. Install this gem, 
@@ -28,7 +23,7 @@ All the styles and javascripts can be easily overridden by adding files with the
 
 ## Contributing
 
-Have a look at [todo.md](https://github.com/nakulpathak3/personal-blog-gem/blob/master/todo.md) for a general idea. I need a minimal sexy front-end for the blog. Something similar to lepture.com. Contact me at nakulpathak3@hotmail.com if you're confused about how to contribute.
+Have a look at [todo.md](https://github.com/nakulpathak3/personal-blog-gem/blob/master/todo.md) for a general idea. Improvements on front-end would be great. Also, I'd love it if someone would start writing some tests the application. Contact me at nakulpathak3@hotmail.com if you're confused about how to contribute.
 
 Basic instructions
 

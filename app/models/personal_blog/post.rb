@@ -1,7 +1,7 @@
 module PersonalBlog
   class Post < ActiveRecord::Base
     has_many :comments, dependent: :destroy
-    has_many :taggings
+    has_many :taggings, dependent: :destroy
     has_many :tags, through: :taggings 
 
     before_create :set_published_at
