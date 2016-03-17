@@ -1,5 +1,7 @@
 # Personal Blog Gem
 
+[![Gem Version](https://badge.fury.io/rb/personal_blog.svg)](https://badge.fury.io/rb/personal_blog)
+
 This is a simple Ruby on Rails engine that mounts a personal blog on any Rails application. It supports markdown and is responsive. It is also completely customizable, i.e, you can add CSS and JS to style the blog any way you want. Admin access is provided through a sessions controller that uses an environment variable to check the password.
 
 ## Usage
