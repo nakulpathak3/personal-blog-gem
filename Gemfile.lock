@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    personal_blog (0.0.1)
+    personal_blog (0.0.3)
       rails (~> 4.2)
       redcarpet (~> 3.3)
       rouge (~> 1.10)

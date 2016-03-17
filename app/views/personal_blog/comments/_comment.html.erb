@@ -3,6 +3,6 @@
   <span class="comment-date"><%= comment.created_at.strftime('%B %e, %Y')%></span> <br>
   <%= comment.text %>   
   <% if admin? %>
-    <%= link_to 'Delete', @post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'comment-delete' %>
+    <%= link_to 'Delete', post_comment_path(@post, comment), method: :delete, data: { confirm: 'Are you sure?' }, class: 'comment-delete' %>
   <% end %>
 </div>
