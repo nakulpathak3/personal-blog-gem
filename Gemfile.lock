@@ -3,8 +3,8 @@ PATH
   specs:
     personal_blog (0.0.1)
       rails (~> 4.2)
-      redcarpet (~> 3.3.4)
-      rouge
+      redcarpet (~> 3.3)
+      rouge (~> 1.10)
 
 GEM
   remote: https://rubygems.org/
