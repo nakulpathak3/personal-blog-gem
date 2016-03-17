@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/personal_blog.svg)](https://badge.fury.io/rb/personal_blog)
 
-This is a simple Ruby on Rails engine that mounts a personal blog on any Rails application. It supports markdown and is responsive. It is also completely customizable, i.e, you can add CSS and JS to style the blog any way you want. Admin access is provided through a sessions controller that uses an environment variable to check the password.
+PersonalBlog adds a responsive single-user blog to any Ruby on Rails application. It supports markdown and provides syntax highlighting with a clean, minimalistic design. It is a Ruby on Rails engine that is completely customizable, i.e, you can add CSS and JS to style the blog any way you want. It does not require a user model and is thus, very lightweight. Admin access to create, edit and delete posts is provided through an environment variable to check the password.
 
 ## Usage
 

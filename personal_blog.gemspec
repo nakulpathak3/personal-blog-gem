@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ["nakulpathak3@hotmail.com"]
   s.homepage    = "http://github.com/nakulpathak3/personal-blog-gem"
   s.summary     = "Add a customizable, markdown-supported personal blog to any rails app"
-  s.description = "A mountable rails engine which adds a personal blog without creating any user models. It supports markdown and all styles can be easily customized."
+  s.description = "PersonalBlog adds a responsive and completely customizable single-user blog to any Ruby on Rails application. It supports markdown and provides syntax highlighting with a clean, minimalistic design."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
