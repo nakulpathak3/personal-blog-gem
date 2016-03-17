@@ -1,5 +1,8 @@
 <div class="comment-box">
   <b><%= comment.author %></b>
   <span class="comment-date"><%= comment.created_at.strftime('%B %e, %Y')%></span> <br>
-  <%= comment.text %>
+  <%= comment.text %>   
+  <% if admin? %>
+    <%= link_to 'Delete', @post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'comment-delete' %>
+  <% end %>
 </div>
