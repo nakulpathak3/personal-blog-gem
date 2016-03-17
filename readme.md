@@ -4,6 +4,8 @@
 
 PersonalBlog adds a responsive single-user blog to any Ruby on Rails application. It supports markdown and provides syntax highlighting with a clean, minimalistic design. It is a Ruby on Rails engine that is completely customizable, i.e, you can add CSS and JS to style the blog any way you want. It does not require a user model and is thus, very lightweight. Admin access to create, edit and delete posts is provided through an environment variable to check the password.
 
+To see a live example of this gem being used, you can view my [blog](http://nakulpathak.com/blog).
+
 ## Usage
 
 1. Install this gem, 
@@ -18,6 +20,8 @@ PersonalBlog adds a responsive single-user blog to any Ruby on Rails application
   - For heroku, you can do `heroku config:set blog_password=<your_password>`. This [guide](https://devcenter.heroku.com/articles/config-vars) explains how environment variables work in heroku.
   - For nginx, add `env blog_password=<your_password>;` to your nginx.conf file. This goes outside of the `http` and `server` blocks. If you're not sure where your file is, do `sudo find / -name "nginx.conf"`.
   - For apache, have a look at the [SetEnv](https://httpd.apache.org/docs/2.4/mod/mod_env.html) directive.
+
+If you're confused about how to use this gem, feel free to [send me a tweet](https://twitter.com/nakulpathak3)!
   
 ## Customizing Design
 
