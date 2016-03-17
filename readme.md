@@ -2,6 +2,8 @@
 
 [![Gem Version](https://badge.fury.io/rb/personal_blog.svg)](https://badge.fury.io/rb/personal_blog)
 
+##### If you're on version 0.0.2 of the gem, there is a bug in deleting comments leading to deleting of the post. Please run `bundle update personal_blog` to be on the version in which this issue is fixed (0.0.3)
+
 PersonalBlog adds a responsive single-user blog to any Ruby on Rails application. It supports markdown and provides syntax highlighting with a clean, minimalistic design. It is a Ruby on Rails engine that is completely customizable, i.e, you can add CSS and JS to style the blog any way you want. It does not require a user model and is thus, very lightweight. Admin access to create, edit and delete posts is provided through an environment variable to check the password.
 
 To see a live example of this gem being used, you can view my [blog](http://nakulpathak.com/blog).
