@@ -1,6 +1,6 @@
 # Personal Blog Gem
 
-[![Gem Version](https://badge.fury.io/rb/personal_blog.svg)](https://badge.fury.io/rb/personal_blog)
+[![Gem Version](https://badge.fury.io/rb/personal_blog.svg)](https://badge.fury.io/rb/personal_blog) [![Code Climate](https://codeclimate.com/github/nakulpathak3/personal-blog-gem/badges/gpa.svg)](https://codeclimate.com/github/nakulpathak3/personal-blog-gem)
 
 ##### If you're on version 0.0.2 of the gem, there is a bug in deleting comments leading to deleting of the post. Please run `bundle update personal_blog` to be on the version in which this issue is fixed (0.0.3)
 
