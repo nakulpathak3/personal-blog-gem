@@ -35,7 +35,7 @@ Have a look at [todo.md](https://github.com/nakulpathak3/personal-blog-gem/blob/
 
 Basic instructions
 
-1. [Fork it] (https://github.com/nakulpathak3/personal_blog/fork) and then do `git clone https://github.com/<your_username>/personal-blog-gem` in your terminal to have it locally.
+1. [Fork it](https://github.com/nakulpathak3/personal_blog/fork) and then do `git clone https://github.com/<your_username>/personal-blog-gem` in your terminal to have it locally.
 2. Make your changes in the local branch, commit and push to your fork.
 3. Go to github.com/your_username/personal-blog-gem and click the `Make Pull Request` button.
 4. Add a helpful description about your changes and you're done. I'll have a look ASAP (ETA: 1 day).
